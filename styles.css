@@ -2,7 +2,7 @@
   position: relative;
   height: auto;
   padding-top: 0;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .header-image {
   background-size: cover;
@@ -29,7 +29,7 @@ ul.navbar li a {
 }
 
 ul.navbar li a:hover {
-  background-color: #111;
+  background-color: #ffde59;
 }
 
 /* CSS for banner image */
@@ -59,14 +59,6 @@ ul.navbar li a:hover {
   transform: translate(-50%, -50%);
   font-size: 50px;
 }
-.contact-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 120%);
-  font-size: 20px;
-  border-radius: 10%;
-}
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -84,16 +76,15 @@ ul.navbar li a:hover {
   left: 20%;
   transform: translate(-10%, 0%);
 }
-
 .profile img {
-  width: 280px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
+  position: relative;
 }
 .social-media-column img {
   width: 30px;
   height: 30px;
 }
-
 .profile h1 {
   margin: 10px 0;
 }
@@ -101,33 +92,45 @@ ul.navbar li a:hover {
 .contact-info {
   margin-bottom: 20px;
 }
-
-.columns {
+.container h4 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
-.contact-column,
 .social-media-column {
   flex-basis: 50%;
   text-align: left;
   white-space: nowrap;
+  display: flex;
 }
 .social-media-column h3 {
   margin-bottom: 10px;
 }
+.social-media-column a {
+  margin-right: 10px;
+}
 
-contact-item {
+.contact-item {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+}
+.contact-info img {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 
 .contact-item i {
   margin-right: 5px;
 }
-
 .social-media-column {
   display: flex;
   flex-wrap: wrap;
@@ -156,19 +159,36 @@ contact-item {
 .work-experience h4 {
   margin-bottom: 10px;
   margin-top: 10px;
+  background-color: #ffde59;
 }
 .work-experience ul,
-.skills ul {
-  padding: 0;
+.education ul {
+  padding: 20;
   margin: 0;
-  list-style: none; /* Remove default bullets */
+  list-style: none;
 }
 
-.work-experience li,
-.skills li {
-  margin-bottom: 10px;
-}
+.title{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 
-.skills {
-  margin-top: 40px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-left: 40px;
+  padding-right: 40px;
+  grid-gap: 30px;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
 }
