@@ -59,7 +59,7 @@ ul.navbar li a:hover {
   transform: translate(-50%, -50%);
   font-size: 50px;
 }
-.contact-btn{
+.contact-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,16 +73,23 @@ ul.navbar li a:hover {
   grid-gap: 20px;
   margin: 20px;
 }
+.contact-info p {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
 
 .profile {
   grid-column: 1;
+  position: absolute;
+  left: 20%;
+  transform: translate(-10%, 0%);
 }
 
 .profile img {
-  width: 250px;
+  width: 280px;
   height: 250px;
 }
-.social-media-column img{
+.social-media-column img {
   width: 30px;
   height: 30px;
 }
@@ -100,9 +107,7 @@ ul.navbar li a:hover {
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20px;
 }
-
 .contact-column,
 .social-media-column {
   flex-basis: 50%;
@@ -123,46 +128,46 @@ contact-item {
   margin-right: 5px;
 }
 
-.social-media-column{
+.social-media-column {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
   width: 30px;
   height: 30px;
+  margin-top: 10px;
 }
 
-.social-media a {
+.social-media-column a {
   display: inline-block;
-  margin: 10px;
   width: 30px;
   height: 30px;
-  background-color: #333;
-  color: rgb(0, 0, 0);
   text-align: center;
   line-height: 30px;
   text-decoration: none;
   border-radius: 50%;
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }
 .work-experience {
   grid-column: 2;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.work-experience h4{
+.work-experience h4 {
   margin-bottom: 10px;
   margin-top: 10px;
 }
 .work-experience ul,
-  .skills ul {
-    padding: 0;
-    margin: 0;
-    list-style: none; /* Remove default bullets */
-  }
+.skills ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Remove default bullets */
+}
 
-  .work-experience li,
-  .skills li {
-    margin-bottom: 10px;
-  }
+.work-experience li,
+.skills li {
+  margin-bottom: 10px;
+}
 
 .skills {
   margin-top: 40px;
