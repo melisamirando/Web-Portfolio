@@ -1,5 +1,49 @@
+.navbar {
+  position: relative;
+  height: auto;
+  padding-top: 0;
+  justify-content: flex-end;
+}
+.header-image {
+  background-size: cover;
+  background-position: center;
+}
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
-.overlay {
+ul.navbar li {
+  float: left;
+}
+
+ul.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.navbar li a:hover {
+  background-color: #111;
+}
+
+/* CSS for banner image */
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+.banner .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -7,26 +51,119 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.navbar {
-  position:relative;
-  height:auto;
-  padding-top: 0;
-  justify-content: flex-end;
- }
-.header-image {
-  background-size: cover;
-  background-position: center;
-  
+
+.banner .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+.contact-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 120%);
+  font-size: 20px;
+  border-radius: 10%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  margin: 20px;
 }
 
-.header-title {
+.profile {
+  grid-column: 1;
+}
+
+.profile img {
+  width: 250px;
+  height: 250px;
+}
+.social-media-column img{
+  width: 30px;
+  height: 30px;
+}
+
+.profile h1 {
+  margin: 10px 0;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.contact-column,
+.social-media-column {
+  flex-basis: 50%;
+  text-align: left;
+  white-space: nowrap;
+}
+.social-media-column h3 {
+  margin-bottom: 10px;
+}
+
+contact-item {
   display: flex;
   align-items: center;
-  height: 100%;
-  color: #000000;
-  font-size: 32px;
- }
+  margin-bottom: 10px;
+}
 
-.header-subtitle {
-  font-size: 18px;
+.contact-item i {
+  margin-right: 5px;
+}
+
+.social-media-column{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  width: 30px;
+  height: 30px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.work-experience {
+  grid-column: 2;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.work-experience h4{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.work-experience ul,
+  .skills ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /* Remove default bullets */
+  }
+
+  .work-experience li,
+  .skills li {
+    margin-bottom: 10px;
+  }
+
+.skills {
+  margin-top: 40px;
 }
