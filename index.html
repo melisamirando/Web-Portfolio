@@ -2,112 +2,132 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../Bootstrap-npm/css/bootstrap.css" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+      <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!--This is the Navigation Bar-->
-    <ul class="navbar">
-      <li><a href="#">Home</a></li>
-      <li><a href="./project.html">Project</a></li>
-      <li><a href="./contact.html">Contact</a></li>
-    </ul>
-    <!--This is the header-->
-    <div class="banner">
-      <img src="./images/cover.jpg" alt="Banner Image">
-      <div class="overlay"></div>
-      <div class="title">Hello, I'm Melisa</div>
-    </div>
-          
-    <div class="container">
-      <div class="profile">
-        <img src="./images/Profile.png"
-        <br>
-        <h1>Melisa Mirando</h1>
-            <div class="contact-info">
-              <img src="./images/email.svg"> melisamirando@gmail.com
-              <br>
-              <img src="./images/call.svg"> +63 9065 790 233
-              <br>
-              <img src="./images/location.svg"> Laguna Philippines
-            </div>
-      <div class="social-media-column">
-        <h4>Connect with me</h4>
-          <a href="https://www.instagram.com/melisamirandoph">
-            <img src="./images/IG Icon.svg" alt="Instagram" >
-          </a>
-          <a href="https://www.facebook.com/melisamirando">
-            <img src="./images/FB Icon.svg" alt="Instagram">
-          </a>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.png" alt="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Future Web Developer</p>
+          <h1>
+            Hi, I'm <span>Melisa</span>
+            Mirando
+          </h1>
+        </div>
       </div>
-          <br>
     </div>
-    <div class="work-experience">
-      <h4>Work Experience</h4>
-        <ul>
-          <li>
-            <h5>On Q Building Group</h5>
-              <p>Position: Virtual Assistant</p>
-              <p>Duration: May 2021 - Present</p>
-          </li>
-          <li>
-            <h5>Caroline Le</h5>
-              <p>Position: Virtual Assistant</p>
-              <p>Duration: November 2020 - Present</p>
-          </li>
-          <li>
-            <h5>Nomad Grind</h5>
-              <p>Position: Virtual Assistant</p>
-              <p>Duration: October 2020 - October 2022</p>
-          </li>
-          <li>
-            <h5>Hydra Centaurus Research Inc.</h5>
-              <p>Position: Field Data Collector</p>
-              <p>Duration: February 2016 - August 2020</p>
-          </li>
-          <li>
-            <h5>Philippine Statistics Authority</h5>
-              <p>Position: Hired Census Area Supervisor</p>
-              <p>Duration: June 2015 - October 2015</p>
-          </li>
-        </ul>
-          <h4>Education</h4>
-            <ul>
-                <h5>Bachelor of Science in Business Administration</h5>
-                <li>Marketing Management</li>
-            </ul> 
+    <!----------About-------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+                I am an experienced virtual assistant offering comprehensive administrative and support services to individuals and businesses.<br> With a diverse background and years of industry experience, I am equipped to streamline operations and help achieve business goals. From email and calendar management to travel arrangements, data entry, research, and even social media marketing, I have the skills to handle various tasks efficiently.<br> With a strong focus on organization and attention to detail, I excel at multitasking and meeting deadlines.<br> Additionally, I am currently expanding my skill set by learning Full Stack Development, allowing me to offer even more comprehensive solutions to enhance business.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span></span><br />Graphic Design
+                </li>
+                <li><span>2019 - 2021</span><br />Team Lead at StarApp LCC.</li>
+                <li>
+                  <span>2017 - 2019</span><br />UI/UX Design Executive at Coin
+                  Digital Ltd.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>May 2021 - Present</span><br />Virtual Assistant | On Q Building Group
+                </li>
+                <li><span>November 2020 - Present</span><br />Virtual Assistant | Caroline Le</li>
+                <li><span>October 2022 - Present</span><br />Virtual Assistant | Forbz Smart Locks</li>
+                <li><span>October 2020 - October 2022</span><br />Virtual Assistant | Nomad Grind</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Bachelor of Science in Business Administration</span><br />Marketing Management</li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <br>
-  <br>
-  <div class"travel-adventure">
-      <h1 class="title">My Travel and adventure</h1>
-  </div>
-  <div class"travel-pics">
-    <br>
-    <br>
-    <div class="gallery">
-      <img src=".//images/Elephant Mountain.png" alt="Elephant Mountain">
-      <img src="./images/Pingxi Crags.png" alt="Pingxi Crags">
-      <img src="./images/Golden Falls.png" alt="Ruifiang">
-      <img src="./images/National Palace Museum.png" alt="National Palace Museum">
-      <img src="./images/Qixing.png" alt="Qixing">
-      <img src="./images/5.png" alt="Taiwan">
-      <img src="./images/7.png" alt="Taiwan">
-      <img src="./images/Yangmingshan Taiwan.png" alt="Yangmingshan">
+    <!------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Virtual Assistant</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, illum quia saepe laudantium porro cupiditate eaque iure soluta, tenetur quis delectus quam quidem, perspiciatis alias necessitatibus ducimus illo atque fuga.</P>
+                    <a href="#">learn more</a> 
+                </div>
+                <div>
+                    <h2>Social Media Management</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, illum quia saepe laudantium porro cupiditate eaque iure soluta, tenetur quis delectus quam quidem, perspiciatis alias necessitatibus ducimus illo atque fuga.</P>
+                    <a href="#">learn more</a> 
+                </div>
+                <div>
+                    <h2>Simple Graphic Design</h2>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, illum quia saepe laudantium porro cupiditate eaque iure soluta, tenetur quis delectus quam quidem, perspiciatis alias necessitatibus ducimus illo atque fuga.</P>
+                    <a href="#">learn more</a> 
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <footer>
-    <p>&copy; 2023 Melisa Mirando. All rights reserved.</p>
-  </footer>
-  </body>
-    <script src="../Bootstrap-npm/js/bootstrap.js"></script>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
   </body>
 </html>
